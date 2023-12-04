@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ตัวอย่างที่ 1-1 โครงสร้างพื้นฐานของ CSS</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styletext.css">
+    <link rel="stylesheet" href="stylesheet/style.css">
     <style>
         h1{
             color: brown;
@@ -32,14 +33,39 @@
         #myID div{ /* 101 */
             font-size: 100pt;
         }
+        body{
+            font-size: 30px;
+        }
+        div{
+            font-size: 1.5em;
+        }
+
+        div{
+            font-size: 1.5em;
+            background-color: cornflowerblue;
+        }
     </style>
 </head>
 <body>
+    <span style="font-size: 1rem;">กำหนดค่าขนาดตัวอักษร = 1 rem</span><br>
+    <span style="font-size: 16px;">กำหนดค่าขนาดตัวอักษร = 16 px</span><br>
+    <span style="font-size: 2rem;">กำหนดค่าขนาดตัวอักษร = 2 rem</span><br>
     <h1>ตัวอย่างที่ 1-1 โครงสร้างพื้นฐานของ CSS</h1>
     <div class="myid">
+        ตัวอักษร 1.5em = 30 px 30px * 1.5 เท่า = 45px
+            <div>
+                ตัวอักษรเป็นลูกของ div 45px * 1.5 เท่า = 67.5px
+                <span style="font-size: 45;">ตัวอักษรนี้มีขนาด = 45 px</span>
+                <div>
+                    ตัวอักษรเป็นลูกของ div
+                </div>
+            </div>
         <p class="myp"> Lorem ipsum dolor, sit amet <span style="background-color: bisque;"> consectetur adipisicing elit.</span> Alias, tenetur aliquam soluta neque tempora molestiae cupiditate iste atque laboriosam architecto, omnis consectetur aspernatur earum officia repudiandae sed! In, molestias quisquam!</p>
     </div>
+    <div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur saepe animi maiores dolores natus omnis dolor laboriosam exercitationem modi officia? Vero reprehenderit ipsa veniam quod exercitationem tenetur, odit fugit quisquam?</p>
         <h2 style="font-size: 26pt; font-weight: bold;">การใช้งาน External Style</h2>
+    </div>
+        <h3>ข้อความ Teg 3</h3>
 </body>
 </html>
