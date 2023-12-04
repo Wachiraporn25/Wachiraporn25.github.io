@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การเลือกทุกเอลิเมนต์ด้วย Attribute Selector</title>
+    <style>
+        img{
+            width: 300px;
+        }
+        h2[title="aTitle"]{
+            color: brown;
+        }
+        img.pic3[alt]{
+        border: solid blue;
+        }
+        h3[title~="title"]{
+            color: hotpink;
+        }
+        h3[title~="job"]{
+            font-size: italic;
+        }
+        h3[title~="joy"]{
+            text-decoration: underline;
+        }
+        p[lang|="en"]{
+            background-color: blueviolet;
+        }
+        a[href^=https]{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1><center>การเลือกทุกเอลิเมนต์ด้วย Attribute Selector</center></h1>
+    <h2 title="aTitle">ไม่มี attribute ชื่่อ atitle</h2>
+    <h2 title="firstTitle">มี attribute ชื่่อ title</h2>
+    <h1><center>การเลือกทุกเอลิเมนต์ด้วย Attribute Selector</center></h1>
+    <div>
+        <article>
+            <h2> First Set</h2>
+            <img class="pic1" src="img/IMG-worlds-of-adventure.webp" alt="เครื่องเล่น">
+            <img class="pic2" src="img/dubai-img-worlds-of-adventure-dino.jpg" alt="ม้าหมุน">
+            <img class="pic3" src="img/hfpqyV7B-IMG-Dubai-UAE-1200x800.jpg" alt="ไดโนเสาร์">
+        </article>
+        <hr>
+        <article>
+            <h2> First Set</h2>
+            <img class="pic4" src="img/e3873302-212a-4c3a-aab3-c3bee866903c.webp" alt="เครื่องเล่น">
+            <img class="pic5" src="img/9558de9d-1e49-437e-aa7b-b8bd4d999b00.webp" alt="เครื่องเล่น">
+            <img class="pic6" src="img/Dubai-3.jpg" alt="ปราสาท">
+        </article>
+    </div>
+    <h3 title="title job joy">ตัวที่ 1 ทดสอบการใช้งาน Attribute~=Vaiue</h3>
+    <h3 title="job">ตัวที่ 2 ทดสอบการใช้งาน Attribute~=Vaiue</h3>
+    <h3 title="joy">ตัวที่ 3 ทดสอบการใช้งาน Attribute~=Vaiue</h3>
+    <div>
+        <p lang="en">Hello</p>
+        <p lang="en">Hi</p>
+        <p lang="es">Hola</p>
+        <p lang="th">สวัสดี</p>
+    </div>
+    <h2><center>การใช้งาน Attribute^=Vaiue</center></h2>
+    <ul>
+        <li><a href="https://www.google.co.th">กูเกิ้ล</li>
+        <li><a href="https://www.apple.com">แอปเปิ้ล</li>
+        <li><a href="https://www.microsoft.com">ไมโครซอฟต์</li>
+    </ul>
+</body>
+</html>
