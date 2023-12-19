@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การจัดการเลย์เอาท์บนเว็บเพจด้วย Float</title>
+    <link rel="stylesheet" href="css/mainStyle.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .box-1 img{
+            float: left;
+        }
+        .box-2 img{
+            float: right;
+        }
+        .box-3 img{
+            float: none;
+        }
+        .mycontainer{
+            background: #333;
+            color: white;
+            width: 960px;
+            margin: 30px auto;
+        }
+        .box{
+            background-color: blanchedalmond;
+            color: black;
+            border: 1px solid #f0f;
+            padding: 10px 30px;
+            margin: 15px;
+            /* border: 3px;
+            border-color: blueviolet; */
+        }
+        #box-1{
+
+        }
+        #box-2{
+            float: left;
+            width: 50%;
+        }
+        #box-3{
+            float: right;
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <h1>การจัดการเลย์เอาท์บนเว็บเพจด้วย Float</h1>
+    <ul> float กำหนดให้อิลิเมนต์สามารถลอยอยู่ด้านใดด้านหนึ่งโดยกำหนดได้ คือ
+        <li>
+            laft, right
+        </li>
+        <li>
+            inherit ลอยตาม parent element
+        </li>
+        <li>
+            none ไม่ให้มีการลอย (dafault)
+        </li>
+    </ul>
+    <ul> clear ไม่อนุญาติให้มีการลอยของอิลิเมนต์ค่าที่กำหนดได้คือ
+        <li>
+            left, right (ไม่อนุญาติให้มีการลอยทางด้านซ้ายและขวา)
+        </li>
+        <li>
+            both ไม่อนุญาติให้ลอยทั้งสองด้าน
+        </li>
+    </ul>
+    <div class="box-1">
+        <p>
+            <img src="img/dubai-img-worlds-of-adventure-dino.jpg" alt="" style="width: 100px;"> 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error sed animi cupiditate eligendi optio, dolores quas dolorem aliquam? Veniam voluptates eos soluta ducimus eaque cumque distinctio ipsum maxime quia fugit?
+        </p>
+    </div>
+    <div class="box-2">
+        <p>
+            <img src="img/dubai-img-worlds-of-adventure-dino.jpg" alt="" style="width: 100px;"> 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error sed animi cupiditate eligendi optio, dolores quas dolorem aliquam? Veniam voluptates eos soluta ducimus eaque cumque distinctio ipsum maxime quia fugit?
+        </p>
+    </div>
+    <div class="box-3">
+        <p>
+            <img src="img/dubai-img-worlds-of-adventure-dino.jpg" alt="" style="width: 100px;"> 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error sed animi cupiditate eligendi optio, dolores quas dolorem aliquam? Veniam voluptates eos soluta ducimus eaque cumque distinctio ipsum maxime quia fugit?
+        </p>
+    </div>
+<hr>
+    <div class="mycontainer">
+        <div id="box-1" class="box">
+            <h2>Title 1</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis culpa temporibus quidem nisi? Facilis odit cum dolorem quidem cupiditate quis. Voluptas delectus autem magnam earum molestias nam corporis id veniam?</p>
+        </div>
+        <div id="box-2" class="box">
+            <h2>Title 2</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis culpa temporibus quidem nisi? Facilis odit cum dolorem quidem cupiditate quis. Voluptas delectus autem magnam earum molestias nam corporis id veniam?</p>
+        </div>
+        <div id="box-3" class="box">
+            <h2>Title 3</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis culpa temporibus quidem nisi? Facilis odit cum dolorem quidem cupiditate quis. Voluptas delectus autem magnam earum molestias nam corporis id veniam?</p>
+        </div>
+    </div>
+</body>
+</html>
