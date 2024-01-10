@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 .container{
     max-width: 1140px;
@@ -57,15 +58,25 @@ nav{
     width: 150%;
 }
 .blog-con{
+    color: blue;
+    
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 2rem;
 }
 .blog-title{
     margin: 2rem 0;
+    font-size: 30px;
 }
 .blog-con img{
     width: 80%;
+}
+.blog-item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #EEEEEE;
 }
 .blog-item p{
     margin: 1rem 0;
@@ -83,6 +94,13 @@ nav{
 .footer-top-item p{
     font-size: 20px;
     color: white;
+}
+.fa-brands{
+    color: aquamarine;
+}
+.F-font{
+    font-size: 25px;
+    color: aquamarine;
 }
 
 
